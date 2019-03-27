@@ -4,7 +4,7 @@
       {{svgTop}}
       <h2>{{prName}}</h2>
     </div>
-    <div class="bottom">
+    <div class="card__bottom">
       <h2>{{prName}}</h2>
       <p>{{prSlogan}}</p>
       <p>{{prDes}}</p>
@@ -15,7 +15,7 @@
 <script>
 export default {
   name: "card",
-  props: ["svgTop", "prName", "prSlogn", "prDes"]
+  props: { svgTop: Function, prName: String, prSlogan: String, prDes: String }
 };
 </script>
 

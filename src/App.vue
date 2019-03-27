@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <card prName="cardInfo.prName"/>
+    <card :prName="cardInfo.prName[0]"/>
+    <card :prName="cardInfo.prName[1]"/>
   </div>
 </template>
 
@@ -13,11 +14,11 @@ export default {
     card
   },
   data() {
-      return 
-         cardInfo {
-         prName: "行为验证"
-        }
-      
+    return {
+      cardInfo: {
+        prName: ["行为验证","深知"]
+      }
+    };
   }
 };
 </script>
